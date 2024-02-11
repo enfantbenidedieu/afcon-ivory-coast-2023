@@ -21,7 +21,7 @@ sidebar = html.Div(
             [
                 dbc.NavLink(html.Span([html.I(className="fa-solid fa-house"),
                                        html.Span("Overview", style={'font-size': 15, 'padding-left': 10})]),
-                                       href = '/overview', active="exact"),
+                                       href = '/', active="exact"),
                 dbc.NavLink(html.Span([html.I(className="fa-solid fa-dashboard"),
                                        html.Span("Dashboard", style={'font-size': 15, 'padding-left': 10})]),
                                        href="/dashboard", active="exact"),

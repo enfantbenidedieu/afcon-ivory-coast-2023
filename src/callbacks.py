@@ -76,7 +76,7 @@ url_stadium = {
     [Input("url", "pathname")]
 )
 def render_page_content(pathname):
-    if pathname == "/overview":
+    if pathname == "/":
         return overview
     elif pathname == "/dashboard":
         return dashboard
