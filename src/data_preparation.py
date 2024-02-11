@@ -3,7 +3,7 @@
 import pandas as pd
 
 ##### Import all sheet
-files_xlsx = pd.ExcelFile("src/data/AFCON-2023.xlsx")
+files_xlsx = pd.ExcelFile("data/AFCON-2023.xlsx")
 
 # Team information
 team_infos =  pd.read_excel(files_xlsx, sheet_name="Team Infos")
