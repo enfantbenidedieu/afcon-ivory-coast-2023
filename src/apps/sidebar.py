@@ -1,34 +1,36 @@
-
+# -*- coding: utf-8 -*-
 
 from dash import html
 import dash_bootstrap_components as dbc
-from dash_iconify import DashIconify
 
 SIDEBAR_STYLE = {
     "position": "fixed",
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "16rem",
+    "width": "18.5rem",
     "padding": "2rem 1rem",
-    "background-color": "#f8f9fa",
+    "background-color": "black",  # "#f8f9fa"
 }
 
 sidebar = html.Div(
     [
         html.Hr(),
+        html.P(),
         dbc.Nav(
             [
-                dbc.NavLink('Overview',href = '/', active="exact",className="fa-solid fa-house"),
-                dbc.NavLink("Database", href="/database", active="exact",className="fa-thin fa-database"),
-                dbc.NavLink("Dashboard", href="/dashboard", active="exact"),
-                dbc.NavLink("Principal Components", href="/principal-component-analysis", active="exact"),
-                dbc.NavLink("Logistic Regression", href="/logistic-regression", active="exact"),
-                dbc.NavLink("Linear Discriminant", href="/linear-discriminant-analysis", active="exact"),
-                dbc.NavLink("Classification Tree", href="/classification-and-regression-tree", active="exact"),
-                dbc.NavLink("K nearest neighbors", href="/k-nearest-neighbors", active="exact"),
-                dbc.NavLink("Comparaison des modèles", href="/model-compare", active="exact"),
-                dbc.NavLink("Variable selection", href="/variable-selection", active="exact")
+                dbc.NavLink(html.Span([html.I(className="fa-solid fa-house"),
+                                       html.Span("Overview", style={'font-size': 15, 'padding-left': 10})]),
+                                       href = '/overview', active="exact"),
+                dbc.NavLink(html.Span([html.I(className="fa-solid fa-dashboard"),
+                                       html.Span("Dashboard", style={'font-size': 15, 'padding-left': 10})]),
+                                       href="/dashboard", active="exact"),
+                dbc.NavLink(html.Span([html.I(className="fa-solid fa-chart-line"),
+                                       html.Span("Statistics", style={'font-size': 15, 'padding-left': 10})]),
+                                       href="/statistics", active="exact"),
+                dbc.NavLink(html.Span([html.I(className="fa-solid fa-database"),
+                                       html.Span("Database", style={'font-size': 15, 'padding-left': 10})]),
+                                       href="/database", active="exact")
             ],
             vertical=True,
             pills=True,
