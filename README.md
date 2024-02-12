@@ -23,3 +23,9 @@ In 2013, the tournament format was switched to being held in odd-numbered years 
 Senegal are the tournament's current champions, having beaten Egypt on penalties in the 2021 final.
 
 For more, see [https://en.wikipedia.org/wiki/Africa_Cup_of_Nations](https://en.wikipedia.org/wiki/Africa_Cup_of_Nations)
+
+## Go live
+
+Check it out [here](https://afcon-ivory-coast-2023.onrender.com/)
+
+
